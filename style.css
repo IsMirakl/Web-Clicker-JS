@@ -1,11 +1,6 @@
 :root { font-family: 'Inter', serif; }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
+
 
 h1{
     margin-left: 10px;
@@ -17,13 +12,32 @@ h1{
 
 .counter__container{
     display: flex;
+    align-items: center;
 }
 
+
+.image__container{
+    margin-top: -200px;
+    margin-left: 550px;
+    width: 250px;
+    height: 250px;
+}
+
+.image__container img{
+    width: 250px;
+    height: 250px;
+}
+
+
+
 .main__button button{
+    border-radius: 16px;
+    border: none;
     width: 100px;
     height: 45px;
     margin-top: 20px;
 }
+
 
 .input__container{
     margin-top: 25px;
@@ -32,6 +46,7 @@ h1{
 .input__container input{
     width: 200px;
     height: 20px;
+    outline: none;
 } 
 
 
@@ -40,6 +55,20 @@ h1{
 }
 
 .buttons button{
+    border-radius: 16px;
+    border: none;
     width: 100px;
     height: 45px;
+}
+
+
+
+.animated-button {
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.animated-button:active {
+    transform: scale(1.1);
 }

@@ -10,26 +10,30 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <title>Document</title>
+    <title>Cucumber-Clicker</title>
 </head>
 
 <body>
     <div class="main__container">
-        <h1>Web-Clicker</h1>
+        <h1>Cucmber-Clicker</h1>
         <div class="counter__container">
-            <div id="counter">0</div>
+            <p>Счет: </p>
+            <div id="counter" style="margin-left: 10px;">0</div>
         </div>
         <div class="main__button">
-            <button id="click_btn" style="background-color: red;">Click</button>
-            <button id="reset_btn" style="background-color: #969BAB;">Reset</button>
+            <button class="animated-button" id="click_btn" style="background-color: red;">Click</button>
+            <button class="animated-button" id="reset_btn" style="background-color: #969BAB;">Reset</button>
         </div>
 
         <div class="input__container">
             <input type="text" id="input_countSum">
         </div>
         <div class="buttons">
-            <button id="sum_btn">Sum</button>
-            <button id="boost_btn">Buy Boost</button>
+            <button class="animated-button" id="sum_btn" style="background-color: #969BAB;">Sum</button>
+            <button class="animated-button" id="boost_btn" style="background-color: #FFE87A;">Buy Boost</button>
+        </div>
+        <div class="image__container animated-button">
+            <img src="./cucumber.png" alt="">
         </div>
         <script src=" ./index.js"></script>
     </div>

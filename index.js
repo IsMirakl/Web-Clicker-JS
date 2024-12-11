@@ -16,7 +16,7 @@ click_btn.addEventListener("click", () => {
     count++;
   }
 
-  countContainer.textContent = "Счет" + count;
+  countContainer.textContent = count;
   checkBoostAvailability();
 });
 
@@ -30,7 +30,7 @@ reset_btn.addEventListener("click", () => {
 sum_btn.addEventListener("click", () => {
   const valueInput = parseInt(input_countSum.value) || 0;
   count += valueInput;
-  input_countSum.value = " ";
+  input_countSum.value = "";
   countContainer.textContent = count;
   checkBoostAvailability();
 });
@@ -47,5 +47,18 @@ function checkBoostAvailability() {
     boost_btn.disabled = true;
   }
 }
+
+document
+  .querySelector(".image__container img")
+  .addEventListener("click", () => {
+    if (isBoosted) {
+      count += 10;
+    } else {
+      count++;
+    }
+
+    countContainer.textContent = count;
+    checkBoostAvailability();
+  });
 
 checkBoostAvailability();
