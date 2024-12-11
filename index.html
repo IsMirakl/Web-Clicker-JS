@@ -4,19 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
-    <h1>Web-Clicker</h1>
-    <div id="counter">0</div>
-    <button id="click_btn">Click</button>
-    <button id="reset_btn">Reset</button>
+    <div class="main__container">
+        <h1>Web-Clicker</h1>
+        <div class="counter__container">
+            <div id="counter">0</div>
+        </div>
+        <div class="main__button">
+            <button id="click_btn" style="background-color: red;">Click</button>
+            <button id="reset_btn" style="background-color: #969BAB;">Reset</button>
+        </div>
 
-    <input type="text" id="input_countSum">
-    <button id="sum_btn">Sum</button>
-    <button id="boost_btn">Buy Boost</button>
-    <script src=" ./index.js"></script>
+        <div class="input__container">
+            <input type="text" id="input_countSum">
+        </div>
+        <div class="buttons">
+            <button id="sum_btn">Sum</button>
+            <button id="boost_btn">Buy Boost</button>
+        </div>
+        <script src=" ./index.js"></script>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,45 @@
+:root { font-family: 'Inter', serif; }
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+h1{
+    margin-left: 10px;
+    font-weight: 800;
+}
+.main__container{
+    display: block;
+}
+
+.counter__container{
+    display: flex;
+}
+
+.main__button button{
+    width: 100px;
+    height: 45px;
+    margin-top: 20px;
+}
+
+.input__container{
+    margin-top: 25px;
+}
+
+.input__container input{
+    width: 200px;
+    height: 20px;
+} 
+
+
+.buttons{
+    margin-top: 20px;
+}
+
+.buttons button{
+    width: 100px;
+    height: 45px;
+}

@@ -16,7 +16,7 @@ click_btn.addEventListener("click", () => {
     count++;
   }
 
-  countContainer.textContent = count;
+  countContainer.textContent = "Счет" + count;
   checkBoostAvailability();
 });
 
