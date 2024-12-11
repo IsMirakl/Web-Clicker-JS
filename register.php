@@ -16,16 +16,13 @@
         $username = $_POST['username'];
         $password = $_POST['password'];
 
-        // Валидация полей
         if (empty($username)) {
             echo "<p style='color: red'>Введите имя пользователя.</p>";
         } elseif (empty($password)) {
             echo "<p style='color: red'>Введите пароль.</p>";
         } else {
-            // Хэшируем пароль перед сохранением
             $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-            // Проверка уникальности имени пользователя
             $stmt = $pdo->prepare("SELECT * FROM users WHERE username = :username");
             $stmt->execute(['username' => $username]);
             $userExists = $stmt->fetch();

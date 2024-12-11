@@ -1,5 +1,5 @@
 <?php
-$dsn = 'sqlite:C:\Users\Lenovo\Desktop\Web-Clicker-JS\database.db'; // Укажите полный путь к файлу базы данных
+$dsn = 'sqlite:C:\Users\Lenovo\Desktop\Web-Clicker-JS\database.db';
 
 try {
     $pdo = new PDO($dsn);

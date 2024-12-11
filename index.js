@@ -6,7 +6,6 @@ let count = 0;
 let isBoosted = false;
 let userID = document.getElementById("user_id").value;
 
-// Функция для сохранения значения count в базе данных
 function saveCount(count) {
   let xhr = new XMLHttpRequest();
   xhr.open("POST", "save_count.php", true);
@@ -19,7 +18,6 @@ function saveCount(count) {
   xhr.send(JSON.stringify({ user_id: userID, count: count }));
 }
 
-// Функция для загрузки значения count из базы данных
 function loadCount() {
   let xhr = new XMLHttpRequest();
   xhr.open("GET", "load_count.php?user_id=" + userID, true);
