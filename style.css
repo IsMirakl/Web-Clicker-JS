@@ -1,5 +1,8 @@
 :root { font-family: 'Inter', serif; }
 
+body{
+    background-color: #151719;
+}
 
 
 h1{
@@ -11,6 +14,9 @@ h1{
 }
 
 .counter__container{
+    margin-left: 10px;
+    color: white;
+    font-weight: 700;
     display: flex;
     align-items: center;
 }
@@ -29,7 +35,6 @@ h1{
 }
 
 
-
 .main__button button{
     border-radius: 16px;
     border: none;
@@ -38,17 +43,9 @@ h1{
     margin-top: 20px;
 }
 
-
-.input__container{
-    margin-top: 25px;
+.buy_button{
+    color: white;
 }
-
-.input__container input{
-    width: 200px;
-    height: 20px;
-    outline: none;
-} 
-
 
 .buttons{
     margin-top: 20px;
